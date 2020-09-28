@@ -4,14 +4,14 @@ import './style.scss';
 import Logo from '../../assets/images/hvac-logo.png';
 
 import configs from '../../assets/configs';
+import FormatAlignRightIcon from '@material-ui/icons/FormatAlignRight';
 
 class MainNav extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            path: window.location.pathname.split('/')[1]
+            path: window.location.pathname.split(process.env.PUBLIC_URL + '/')[1]
         };
-        console.log(this.state.path);
         this.checkIfActive = this.checkIfActive.bind(this);
     }
     componentDidMount() {
@@ -34,9 +34,10 @@ class MainNav extends React.Component {
                     <Navbar.Brand href="/">
                         <img src={Logo} alt={'Company Name'} className={'logo-top'}/>
                         <p>{configs.companyName}</p>
-                        {/*<img src={Logo2} alt={'Decoration V.V'} className={'logo-top-mobile'}/>*/}
                     </Navbar.Brand>
-                    <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+                    <Navbar.Toggle aria-controls="basic-navbar-nav">
+                        <FormatAlignRightIcon/>
+                    </Navbar.Toggle>
                     <Navbar.Collapse id="responsive-navbar-nav">
                         <Nav className="ml-auto">
                             <Nav.Link href={`${process.env.PUBLIC_URL}/`} className={this.checkIfActive('') ? 'active' : ''}>Home</Nav.Link>

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import {Fade } from 'react-reveal';
 import './styles.scss';
 import MainNav from "../../components/MainNav";
@@ -26,15 +26,17 @@ import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import TwitterIcon from '@material-ui/icons/Twitter';
 import PinterestIcon from '@material-ui/icons/Pinterest';
 
-
 const GetAQuote = (props) => {
-    const setStyle={
+    const setStyle = {
         backgroundImage: "url(" + Background + ")",
         backgroundPosition: 'center',
         backgroundSize: 'cover',
         backgroundRepeat: 'no-repeat',
         height: '85vh'
     };
+    useEffect( () =>{
+        document.title = `${configs.companyName} | HVAC professionals in ${configs.greatCity} and surrounding areas`;
+    });
     return (
         <div className="page-wrapper">
             <div style={setStyle}>

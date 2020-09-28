@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import {Fade, Slide} from 'react-reveal';
 import './styles.scss';
 import MainNav from "../../components/MainNav";
@@ -29,7 +29,6 @@ import OUR_PRIMARY_PURPOSE from '../../assets/images/OUR-PRIMARY-PURPOSE.jpg';
 
 import BestHVACImg from '../../assets/images/air-conditioner-installation-Best-HVAC.jpg';
 
-
 import AC_INSTALLATION from '../../assets/images/AC_INSTALLATION.jpg';
 import AC_REPAIR from '../../assets/images/AC_REPAIR.jpg';
 import AC_MAINTENANCE from '../../assets/images/AC_MAINTENANCE.jpg';
@@ -37,13 +36,16 @@ import AC_MAINTENANCE from '../../assets/images/AC_MAINTENANCE.jpg';
 import Footer from '../../components/Footer';
 
 const Home = (props) => {
-    const setStyle={
+    const setStyle = {
         backgroundImage: "url(" + Background + ")",
         backgroundPosition: 'center',
         backgroundSize: 'cover',
         backgroundRepeat: 'no-repeat',
         height: '100vh'
     };
+    useEffect( () =>{
+        document.title = `${configs.companyName} | HVAC professionals in ${configs.greatCity} and surrounding areas`;
+    });
     return (
         <div className="page-wrapper">
             <div style={setStyle}>

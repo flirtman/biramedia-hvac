@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import {Container, Row, Col, Accordion, Card} from 'react-bootstrap';
 import './styles.scss';
 import MainNav from "../../components/MainNav";
@@ -12,11 +12,14 @@ import LiveHelpIcon from '@material-ui/icons/LiveHelp';
 import QuestionAnswerIcon from '@material-ui/icons/QuestionAnswer';
 
 const FAQ = (props) => {
-    const setStyle={
+    const setStyle = {
         backgroundPosition: 'center',
         backgroundSize: 'cover',
         backgroundRepeat: 'no-repeat',
     };
+    useEffect( () =>{
+        document.title = `${configs.companyName} | HVAC professionals in ${configs.greatCity} and surrounding areas`;
+    });
     return (
         <div className="page-wrapper">
             <div style={setStyle}>

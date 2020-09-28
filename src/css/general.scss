@@ -3,15 +3,17 @@
 $Mukta :  'Mukta', sans-serif;
 
 $colorGgGray : #f9f9f9;
-$colorBlueRegular : #1a82c5;
-$colorBlueBright : #219df3;
+$colorMainRegular : #1a82c5;
+$colorMainBright : #219df3;
+$colorMainDark : #1b6faf;
 $colorGrayBright : #f5f5f5;
 $colorGrayBrightFooter : #7d838e;
 $colorGrayDark: #26292e;
 $colorGrayDarkLight: #5f656f;
+$colorGrayTxt: #7f7f7f;
 
-.blue-text { color: $colorBlueRegular; }
-.bg-blue-regular { background-color: $colorBlueRegular; }
+.blue-text { color: $colorMainRegular; }
+.bg-blue-regular { background-color: $colorMainRegular; }
 .bg-white { background-color: white; }
 
 * {
@@ -36,7 +38,7 @@ big {font-size: 150%}
   a {
     border-radius: 50px;
     box-shadow: none;
-    background-color: $colorBlueRegular;
+    background-color: $colorMainRegular;
     color: #ffffff;
     padding: 1.5em 2.5em;
     font-weight: 400;
@@ -50,7 +52,7 @@ big {font-size: 150%}
     display: flex;
     &:hover {
       box-shadow: 0 2px 5px rgba(0,0,0,.4);
-      background-color: $colorBlueBright;
+      background-color: $colorMainBright;
     }
   }
 }
@@ -84,5 +86,5 @@ big {font-size: 150%}
 
 .MuiRadio-colorSecondary.Mui-checked,
 .MuiCheckbox-colorSecondary.Mui-checked{
-  color: $colorBlueRegular !important;
+  color: $colorMainRegular !important;
 }

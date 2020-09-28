@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import {Container, Row, Col, Fade} from 'react-bootstrap';
 
 import './styles.scss';
@@ -14,6 +14,9 @@ import configs from "../../assets/configs";
 import ServiceBoxes  from '../../components/ServiceBoxes';
 
 const About = (props) => {
+    useEffect( () =>{
+        document.title = `${configs.companyName} | HVAC professionals in ${configs.greatCity} and surrounding areas`;
+    });
     return (
         <div className="page-wrapper">
             <MainNav/>

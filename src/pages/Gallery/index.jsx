@@ -1,10 +1,12 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import {Container, Row, Col} from 'react-bootstrap';
 import './styles.scss';
 import MainNav from "../../components/MainNav";
 import {Fade} from "react-reveal";
 import Footer from "../../components/Footer";
 import GalleryLib from 'react-grid-gallery';
+
+import configs from "../../assets/configs";
 
 import img1 from '../../assets/images/gallery/img1.jpg';
 import img2 from '../../assets/images/gallery/img2.jpg';
@@ -89,11 +91,14 @@ const IMAGES = [
 
 
 const Gallery = (props) => {
-    const setStyle={
+    const setStyle = {
         backgroundPosition: 'center',
         backgroundSize: 'cover',
         backgroundRepeat: 'no-repeat',
     };
+    useEffect( () =>{
+        document.title = `${configs.companyName} | HVAC professionals in ${configs.greatCity} and surrounding areas`;
+    });
     return (
         <div className="page-wrapper">
             <div>

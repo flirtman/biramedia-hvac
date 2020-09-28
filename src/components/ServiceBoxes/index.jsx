@@ -19,9 +19,9 @@ const ServiceBoxes = () => {
                 </div>
                 <div className="box-icon"><HomeOutlinedIcon/></div>
                 <div className="box-content">
-                    <h2>RESIDENTIAL HVAC</h2>
-                    <p>Trusted expert residential plumbing & repair.</p>
-                    <div className="box-btn"><a href="">Read More</a></div>
+                    <h2>HEATING</h2>
+                    <p>Trusted expert heating installation & repair.</p>
+                    <div className="box-btn"><a href={`${process.env.PUBLIC_URL}/service/heating`}>Read More</a></div>
                 </div>
             </div>
             <div className="box-wrapper">
@@ -30,9 +30,9 @@ const ServiceBoxes = () => {
                 </div>
                 <div className="box-icon"><BusinessOutlinedIcon/></div>
                 <div className="box-content">
-                    <h2>COMMERCIAL HVAC</h2>
-                    <p>Commercial plumbing & boiler services of any kind.</p>
-                    <div className="box-btn"><a href="">Read More</a></div>
+                    <h2>AIR CONDITIONING</h2>
+                    <p>Air conditioning services of any kind.</p>
+                    <div className="box-btn"><a href={`${process.env.PUBLIC_URL}/service/air-conditioning`}>Read More</a></div>
                 </div>
             </div>
             <div className="box-wrapper">
@@ -41,9 +41,9 @@ const ServiceBoxes = () => {
                 </div>
                 <div className="box-icon"><BuildOutlinedIcon/></div>
                 <div className="box-content">
-                    <h2>SERVICE & REPAIR</h2>
+                    <h2>AIR QUALITY</h2>
                     <p>Preventative maintenance and routine care.</p>
-                    <div className="box-btn"><a href="/">Read More</a></div>
+                    <div className="box-btn"><a href={`${process.env.PUBLIC_URL}/service/air-quality`}>Read More</a></div>
                 </div>
             </div>
         </div>
