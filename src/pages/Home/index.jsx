@@ -53,11 +53,12 @@ const Home = (props) => {
                         <div style={{maxWidth: '600px'}}>
                             <Fade left cascade>
                                 <h1 className="">
-                                    <span className="blue-text">Air Conditioning</span> <br/>Services
+                                    <span className="blue-text">Air Conditioning</span> <br/>
+                                    and <span className="blue-text">HVAC</span> Services
                                 </h1>
                             </Fade>
                             <Fade>
-                                <p className="">{configs.companyName} are here when you need us to service both your residential and comercial properties.</p>
+                                <p className="">{configs.companyName} are here when you need us to service both your residential and commercial properties.</p>
                                 <div className="">
                                     <div className="button-blue">
                                         <a href={`${process.env.PUBLIC_URL}/get-a-quote`}>Request Service</a>
@@ -101,8 +102,11 @@ const Home = (props) => {
                         <div className="about-section-left">
                             <div className="about-section-left-content">
                                 <h3>Who <span>We</span> Are</h3>
-                                <p>{configs.companyName} core values are the pillars of our success.
-                                    These values drive our daily decisions.</p>
+                                <p>We serve to be your one-stop destination for all the HVAC services that you might be looking for.</p>
+                                <p>You only tend to pay attention to the HVAC system when it breaks down. With <strong>{configs.companyName}</strong>, you can look forward
+                                    to getting it up and running effectively at your premise. Being a licensed
+                                    and specialized service provider of top-notch HVAC solutions, we can resolve all types of ventilation, air
+                                    conditioning, and heating problems.</p>
                                 <Row>
                                     <Col xs={12} sm={6}>
                                         <div className="about-section-left-content-point-wrap">
@@ -111,7 +115,7 @@ const Home = (props) => {
                                             </span>
                                             <span>
                                                 <h4>SERVICE LEGENDS</h4>
-                                                <p>Uisque molestie, arcu et iaculis mollis orci lacus facilisis pede, non euismod arcu ante quis massa.</p>
+                                                <p>We are highly renowned for our bespoke HVAC services across {configs.greatCity}.</p>
                                             </span>
                                         </div>
                                     </Col>
@@ -122,7 +126,7 @@ const Home = (props) => {
                                             </span>
                                             <span>
                                                 <h4>OUR GOAL</h4>
-                                                <p>Uisque molestie, arcu et iaculis mollis orci lacus facilisis pede, non euismod arcu ante quis massa.</p>
+                                                <p>We are committed to serving our clients with top-notch HVAC installation and repair services across residential and commercial premises.</p>
                                             </span>
                                         </div>
                                     </Col>
@@ -135,7 +139,7 @@ const Home = (props) => {
                                             </span>
                                             <span>
                                                 <h4>OUR CLIENTS</h4>
-                                                <p>Uisque molestie, arcu et iaculis mollis orci lacus facilisis pede, non euismod arcu ante quis massa.</p>
+                                                <p>We cater to both residential as well as commercial units with our professional range of services.</p>
                                             </span>
                                         </div>
                                     </Col>
@@ -146,7 +150,7 @@ const Home = (props) => {
                                             </span>
                                             <span>
                                                 <h4>OUR PRIMARY PURPOSE</h4>
-                                                <p>Uisque molestie, arcu et iaculis mollis orci lacus facilisis pede, non euismod arcu ante quis massa.</p>
+                                                <p>We aim at providing top-class experiences to our clients through the installation, repair, replacement, and maintenance of HVAC systems.</p>
                                             </span>
                                         </div>
                                     </Col>
@@ -176,9 +180,9 @@ const Home = (props) => {
                     <Slide right>
                         <div className="ac-section-right">
                             <div className="ac-section-right-content">
-                                <h3><span>Air Conditioning</span> Services</h3>
-                                <p>{configs.companyName} core values are the pillars of our success.
-                                    These values drive our daily decisions.</p>
+                                <h3><span>HVAC</span> Services</h3>
+                                <p>Whether it is a large or a small project, if it is related to HVAC, then our team of experts is here to cater
+                                    to your specific requirements.</p>
                                 <Row>
                                     <Col xs={12}>
                                         <div className="ac-section-right-content-point-wrap">
@@ -186,10 +190,8 @@ const Home = (props) => {
                                                 <img src={AC_INSTALLATION} alt=""/>
                                             </span>
                                             <span>
-                                                <h4>AC INSTALLATION</h4>
-                                                <p>We install high efficiency residential and commercial air conditioning units.
-                                                Contact us today to learn more about the multiple cooling system options.
-                                                We also install Central Air, Variable Refrigerant Volume (VRV) and VRF systems.</p>
+                                                <h4>Air Conditioning:</h4>
+                                                <p>We ensure that your property is cool and breezy throughout summers through our air conditioning services.</p>
                                             </span>
                                         </div>
                                     </Col>
@@ -199,9 +201,8 @@ const Home = (props) => {
                                                 <img src={AC_REPAIR} alt=""/>
                                             </span>
                                             <span>
-                                                <h4>AC REPAIR</h4>
-                                                <p>We are trained and extremely knowledgeable to help diagnose the
-                                                issues you’re having – while providing an affordable solution.</p>
+                                                <h4>Heating:</h4>
+                                                <p>If you are not satisfied with the performance of the heating unit, you can reach out to us for advanced solutions.</p>
                                             </span>
                                         </div>
                                     </Col>
@@ -211,9 +212,8 @@ const Home = (props) => {
                                                 <img src={AC_MAINTENANCE} alt=""/>
                                             </span>
                                             <span>
-                                                <h4>AC MAINTENANCE</h4>
-                                                <p>Your AC system should keep you cool in summer—without a big utility bill.
-                                                NY Master Air Inc. can make sure the temperature inside your home is just right.</p>
+                                                <h4>Air Quality:</h4>
+                                                <p>With us, you can access a reliable team of air quality service provider to deal with molds, dust, allergens, and pollen issues.</p>
                                             </span>
                                         </div>
                                     </Col>

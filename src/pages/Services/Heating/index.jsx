@@ -8,6 +8,8 @@ import Footer from "../../../components/Footer";
 
 import './styles.scss';
 
+import configs from "../../../assets/configs";
+
 const Heating = () => {
     const setStyle={
         backgroundPosition: 'center',
@@ -27,20 +29,47 @@ const Heating = () => {
                         <Row>
                             <Col md={8}>
                                 <Fade>
-                                    <h2>EFFECTIVE HEATING SERVICES IN SAUGEEN SHORES AND SURROUNDING AREA</h2>
-                                    <p>Your Saugeen Shores and Surrounding area property's heating system is crucial - not only does it keep you warm during the colder winter months but it could also be responsible for delivering hot water and has a direct influence on the comfort of your space. Whether you're in the market for a new heat pump or simply need a competent furnace cleaning, Parker Heating & Cooling has the heating services designed to keep your system working right.</p>
+                                    <h2><span>{configs.companyName}</span> Heating Services</h2>
+                                    <p>
+                                        People all across {configs.greatCity} tend to depend significantly on reliable HVAC units for optimum heating of
+                                        the property when it is chilling outside. We realize the importance of optimum heating for your
+                                        residential or commercial property when it is immensely cold outside. If you are facing difficulties in
+                                        managing the heating system of your house or office effectively, you can reach out to our team of HVAC
+                                        experts at {configs.companyName}.
+                                    </p>
+                                    <p>
+                                        Whether your heating system requires installation, repair, replacement, or maintenance, we have got
+                                        you covered. Whether it is about a heat pump system or a furnace, we are committed to providing
+                                        access to top-quality heating repair, installation, and maintenance solutions. Using the expertise of our
+                                        HVAC experts, you can also know about programmable thermostats and zone control systems that can
+                                        help you in saving utility as well as energy bills.
+                                    </p>
+                                    <p>You can reach out to us for a comprehensive range of heating solutions. Here are some to look out for:</p>
                                     <ul>
-                                        <li>Furnaces</li>
-                                        <li>Heat Pumps</li>
-                                        <li>Thermostats</li>
-                                        <li>Heating System Installation</li>
-                                        <li>Heating System Maintenance</li>
-                                        <li>Heating System Repair</li>
-                                        <li>In-Floor Heating</li>
-                                        <li>Emergency Response</li>
+                                        <li>
+                                            Heating Repair: Is your heating unit not functioning well? Our team of heating experts can help
+                                            you fix the same instantly as well as professionally.
+                                        </li>
+                                        <li>
+                                            Heating Installation: In case the existing heater is broken or you simply need to purchase an all-
+                                            new unit, you can reach out to our team of HVAC experts to help you with heating installation.
+                                        </li>
+                                        <li>
+                                            Heating Maintenance: As you ensure regular maintenance of the heating unit at your home or
+                                            office, you can look forward to placing fewer repair or replacement requests. You can trust the
+                                            overall expertise of our HVAC experts with professional heating care and maintenance.
+                                        </li>
                                     </ul>
-                                    <p>Because Parker Heating & Cooling has been active in the Saugeen Shores and Surrounding area area for a long time, we understand the different options you have when it comes to heating and how to service each. Our service-oriented team has the knowledge necessary to complete everything from new heating installations to full service of your existing system. Our outstanding technicians, friendly attitude, and quality workmanship will help you realize your heating system's true potential.</p>
-                                    <p>Don't get stuck in the cold. Let Parker Heating & Cooling make sure that your heating system is running optimally and up to the task of providing comfort in your Saugeen Shores and Surrounding area property despite the weather outside. Call 519-389-5391 for full details about our heating services and competitive prices.</p>
+                                    <p>
+                                        As our HVAC experts remain quite active in the {configs.greatCity} area, we understand the multiple options that
+                                        we can deliver when it comes to heating units – both at residential and commercial units. Reach out to us
+                                        now for more details.
+                                    </p>
+                                    <div className="">
+                                        <div className="button-blue">
+                                            <a href={`${process.env.PUBLIC_URL}/contact`}>Contact Us</a>
+                                        </div>
+                                    </div>
                                 </Fade>
                             </Col>
                             <Col md={4}>

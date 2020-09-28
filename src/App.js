@@ -5,7 +5,8 @@ import Route from './pages/Route';
 const configs = {
     phone : '514.476.0669',
     email : 'victor.vremea@gmail.com',
-    companyName: 'HVAC Solution Inc.'
+    companyName: 'HVAC Solution Inc.',
+    greatCity: 'Montreal'
 };
 
 function App() {

@@ -7,6 +7,8 @@ import BlueQuoteStripe from "../../../components/BlueQuoteStripe";
 import Footer from "../../../components/Footer";
 import './styles.scss';
 
+import configs from "../../../assets/configs";
+
 const AirConditioning = () => {
     const setStyle={
         backgroundPosition: 'center',
@@ -26,21 +28,44 @@ const AirConditioning = () => {
                         <Row>
                             <Col md={8}>
                                 <Fade>
-                                    <h2>QUALIFIED SAUGEEN SHORES AND SURROUNDING AREA AIR CONDITIONING SERVICES</h2>
-                                    <p>When the heat of summer is at its highest, you'll be glad you called Parker Heating & Cooling to make sure your air conditioning is at peak performance. Local to the Saugeen Shores and Surrounding area market, we know that having a working AC is almost a necessity to survive and our staff is ready to respond quickly so you don't suffer needlessly. Our capable team will quickly right the wrong and help you beat the heat. We offer the following air conditioning services:</p>
+                                    <h2><span>{configs.companyName}</span> Air Conditioning Services</h2>
+                                    <p>
+                                        As the hot summer months kick in, you wish to ensure that the air conditioning system in your home or
+                                        office in {configs.greatCity} is functioning well. In case you are facing issues with the air conditioning system of
+                                        your house or commercial unit, then you can reach out to us for professional air conditioning solutions
+                                        in {configs.greatCity}. Whether your air conditioning unit needs repair or replacement, we are here to help you
+                                        with that. Our HVAC experts can also help you with air conditioning installation for optimum experience.
+                                    </p>
+                                    <p>
+                                        When you are going on about your day, the last thing that you would like to think about is the overall
+                                        health of the air conditioning HVAC system at your house or office. At {configs.companyName}, we take
+                                        care of all your air conditioning requirements to allow you to enjoy the cool during the summer season.
+                                    </p>
                                     <ul>
-                                        <li>Air Conditioning Installation</li>
-                                        <li>Air Conditioning Repair</li>
-                                        <li>Air Conditioning Maintenance</li>
-                                        <li>Coil and Blower Cleaning</li>
-                                        <li>Duct and Vent Cleaning</li>
-                                        <li>Filter Replacement</li>
-                                        <li>Programmable Thermostats</li>
-                                        <li>Emergency Response</li>
+                                        <li>
+                                            Air Conditioning Installation: Whether you are looking for an air conditioning unit for your home
+                                            or office space, or your existing air conditioning system is beyond repair, air conditioning
+                                            installation by the experts is an ideal solution. We feature a team of licensed technicians for
+                                            determining which options are right as per your specific requirement and budget.
+                                        </li>
+                                        <li>
+                                            Air Conditioning Repair: There cannot be anything worse than having the air conditioner fail
+                                            during the peak of the summer season. Air conditioning is critical. Therefore, for the best
+                                            results, you can contact our professionals at {configs.companyName} to learn about our
+                                            exclusive air conditioning repair services.
+                                        </li>
+                                        <li>
+                                            Air Conditioning Maintenance: It is always a good idea to ensure proper A/C repair and
+                                            maintenance. It will allow your system to run efficiently and for a longer duration. You can
+                                            schedule the maintenance services of your air conditioning unit now by reaching out to us.
+                                        </li>
                                     </ul>
-                                    <p>For proper air conditioning function, we advise our Saugeen Shores and Surrounding area customers to call at the earliest signs of trouble. In many cases, your AC's performance will slowly deteriorate, delivering less and less cold air. Our professional AC technicians have a knack for spotting the problem and fixing it before you're covered in sweat. In addition, scheduling regular air conditioning maintenance can prevent many problems from happening.</p>
-                                    <p>If you're looking to upgrade to a new, more powerful air conditioner or just need to service the one you have, let Parker Heating & Cooling know and we'll be on the way. Our services are affordable, speedy, and designed to give you the most bang for your buck. Keep our number handy, 519-389-5391, and call us for all your air conditioning needs.</p>
-                                </Fade>
+                                    <div className="">
+                                        <div className="button-blue">
+                                            <a href={`${process.env.PUBLIC_URL}/contact`}>Contact us right away to know more!</a>
+                                        </div>
+                                    </div>
+                                    </Fade>
                             </Col>
                             <Col md={4}>
                                 <Fade>

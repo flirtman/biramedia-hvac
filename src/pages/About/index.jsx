@@ -30,18 +30,29 @@ const About = (props) => {
                     <Col md={8}>
                         <h2>{configs.companyName}</h2>
                         <p className="p-large">
-                            We realize that mechanical systems today are far more
-                            complex than ever and energy costs continue to rise.
+                            {configs.companyName} is a leading service provider of top-class HVAC services across {configs.greatCity}. We
+                            deliver professional on-site services for all possible models as well as makes of industrial, residential,
+                            and commercial equipment for air conditioning, ventilation, and heating. Get access to top-class HVAC
+                            services in {configs.greatCity} with our help!
                         </p>
-                        <p>Nothing wears on homeowners like the idea of handling plumbing problems.
-                            From the water heater to sewer line, we take the pressure off of you (and put it back in your shower lines).
-                            Our plumbers are the most recognized professionals in the world because we’re committed to amazing service and
-                            nothing wears on homeowners like the idea of handling plumbing problems. Nothing wears on homeowners
-                            like the idea of handling plumbing problems.</p>
-                        <p>Our plumbers are the most recognized professionals in the world because we’re committed to amazing service and
-                            nothing wears on homeowners like the idea of handling plumbing problems. Nothing wears on homeowners
-                            like the idea of handling plumbing problems.</p>
-
+                        <p>As a full-service HVAC provider, {configs.companyName} has been assisting residential as well as
+                            commercial units with consistent HVAC solutions throughout the year. At the heart of our unparalleled
+                            range of professional services is the expertise of our expert team that is capable of deeply
+                            understanding the in-depth concepts of heating, cooling, and ventilation. With {configs.companyName},
+                            you have access to a reliable partner for ensuring that your property is efficient and
+                            functional.</p>
+                        <h2>How do We Stand Out?</h2>
+                        <p>For most of our clients, they end up expecting the respective HVAC systems to go on working. This is the
+                            assurance that we bring on the table while serving them. When it comes to delivering HVAC solutions,
+                            you will always be assured that your HVAC systems are in good, professional hands.</p>
+                        <p>With multiple options to choose from in {configs.greatCity} with respect to HVAC services, it can be a tough task
+                            to choose the best one out there. {configs.companyName} provides professional services involving skills
+                            and several years of expertise in the given field.</p>
+                        <p>Due to our strong commitment towards delivering the highest quality of services, we are able to
+                            constantly grow our client base. We are currently serving a myriad of both residential as well as
+                            commercial units with our innovative range of HVAC solutions.</p>
+                        <p><small>We are based in {configs.greatCity} and aim at delivering top-quality cooling, heating, ventilation, and air quality
+                            services to the local as well as surrounding area.</small></p>
                         <img src={Img2} alt="" className="customer-satisfaction"/>
                         <div className="button-blue">
                             <a href={`${process.env.PUBLIC_URL}/get-a-quote`}>Request Service</a>

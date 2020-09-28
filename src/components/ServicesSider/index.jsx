@@ -14,6 +14,7 @@ const ServicesSider = () => {
                   <li><Nav.Link href={`${process.env.PUBLIC_URL}/service/heating`}>Heating</Nav.Link></li>
                   <li><Nav.Link href={`${process.env.PUBLIC_URL}/service/air-quality`}>Air Quality</Nav.Link></li>
                   <li><Nav.Link href={`${process.env.PUBLIC_URL}/service/water-heaters`}>Water Heaters</Nav.Link></li>
+                  <li><Nav.Link href={`${process.env.PUBLIC_URL}/service/commercial-services`}>Commercial Services</Nav.Link></li>
               </ul>
           </div>
           <a className="call-now" href={`tel:${configs.phone}`}><strong><big>{configs.phone}</big></strong></a>

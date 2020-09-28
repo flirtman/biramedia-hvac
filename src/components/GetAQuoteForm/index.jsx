@@ -58,7 +58,8 @@ const services = [
     'Air Conditioning',
     'Heating',
     'Air Quality',
-    'Water Heaters'
+    'Water Heaters',
+    'Commercial Services'
 ];
 
 const GetAQuoteForm = () => {

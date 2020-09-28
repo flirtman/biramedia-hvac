@@ -7,6 +7,8 @@ import BlueQuoteStripe from "../../../components/BlueQuoteStripe";
 import Footer from "../../../components/Footer";
 import './styles.scss';
 
+import configs from "../../../assets/configs";
+
 const AirQuality = () => {
     const setStyle={
         backgroundPosition: 'center',
@@ -26,20 +28,53 @@ const AirQuality = () => {
                         <Row>
                             <Col md={8}>
                                 <Fade>
-                                    <h2>AIR QUALITY SERVICES IN SAUGEEN SHORES AND SURROUNDING AREA</h2>
-                                    <p>With people in Saugeen Shores and Surrounding area spending more and more time indoors, the topic of air quality has never been more important and the EPA has listed poor air quality as one of the five biggest risks to public health. To solve the problem of poor air in Saugeen Shores and Surrounding area, Parker Heating & Cooling has developed a complete offering of air quality services designed to help you breathe better, stay healthy, and live more comfortably.</p>
+                                    <h2><span>{configs.companyName}</span> Air Quality Services</h2>
+                                    <p>
+                                        As far as indoor climate is concerned, people turn to reliable air conditioning or heating solutions from
+                                        the experts. While both heating and cooling of the environment in which you live are important, you
+                                        cannot deny the importance of breathing in fresh, unpolluted air. Therefore, ensuring and maintaining
+                                        good air quality in your property is of utmost importance. At {configs.companyName}, we help both
+                                        residential as well as commercial property owners get access to the freshest indoor air with the help of
+                                        our efficient and reliable services.
+                                    </p>
+                                    <p>
+                                        Our HVAC technicians are highly knowledgeable and skilled in the given field. Moreover, they possess
+                                        several years of relevant expertise in dealing with HVAC air quality units and services to deliver optimum
+                                        solutions. We also aim at adhering to the defined code of ethics while delivering professional services.
+                                    </p>
+                                    <h2>Indoor Air Quality Cleaning System Solutions</h2>
+                                    <p>
+                                        If you wish to live in a healthier and comfortable environment, it is important that you should aim at
+                                        improving the overall air quality. Our expert HVAC team at {configs.companyName} offers a full range
+                                        of indoor air quality solutions for your lifestyle and living environment.
+                                    </p>
+                                    <p>
+                                        Our indoor air quality specialists are capable of converting the cooling or heating system into a
+                                        comprehensive air treatment center for the entire house or office. For reducing indoor pollutants, we
+                                        recommend that you should consider installing advanced air cleaning systems like innovative filters.
+                                        Moreover, the installation of advanced air sterilization systems can also help in reducing germs and
+                                        removing odors.
+                                    </p>
+                                    <p>
+                                        Additionally, some of the extra air quality services that our experts deliver are:
+                                    </p>
                                     <ul>
-                                        <li>Air Duct Cleaning</li>
-                                        <li>Dryer Vent Cleaning</li>
-                                        <li>Humidifiers</li>
+                                        <li>Air duct cleaning</li>
+                                        <li>Air purification systems</li>
+                                        <li>Dryer vent cleaning</li>
+                                        <li>Air quality assessment</li>
+                                        <li>Air filter replacements</li>
                                         <li>Dehumidifiers</li>
-                                        <li>Air Purification Systems</li>
-                                        <li>UV Germicidal Lights</li>
-                                        <li>Air Filter Replacements</li>
-                                        <li>Air Quality Assessment</li>
                                     </ul>
-                                    <p>In dealing with the issue of air quality, the service technicians at Parker Heating & Cooling have undergone extensive training both to understand the problem and to know the right steps to deal with it. Their experience and knowledge of the subject make them an expert resource for those living in Saugeen Shores and Surrounding area. With our help, you'll be able to improve the air quality in your property and stop worrying about pollen, mold, allergens, and other irritants.</p>
-                                    <p>You may think that simply buying new equipment may solve your air quality issue, but contracting Parker Heating & Cooling is a much better solution. Not only will we clean your ducts and vents, but will also provide a full examination of your property to determine the most efficient and effective solution. Call 519-389-5391 to speak to an air quality expert about the options available for improving the air you breathe indoors.</p>
+                                    <p>
+                                        When it comes to improving the overall air quality for your property, reach out to our experts at HVAC
+                                        {configs.greatCity} Solutions.
+                                    </p>
+                                    <div className="">
+                                        <div className="button-blue">
+                                            <a href={`${process.env.PUBLIC_URL}/contact`}>Contact Us</a>
+                                        </div>
+                                    </div>
                                 </Fade>
                             </Col>
                             <Col md={4}>

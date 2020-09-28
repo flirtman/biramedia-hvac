@@ -12,6 +12,7 @@ if(Object.keys(params).length > 0) {
         email : params.email,
         companyName: params.company_name,
         companyAddress: params.address,
+        greatCity: params.great_city
     };
 }
 else {
@@ -20,6 +21,7 @@ else {
         email : "demo@gmail.com",
         companyName: "HVAC Montreal Solutions",
         companyAddress: "6555 Avenue Kildair, Cote-Saint-Luc, QC",
+        greatCity: "Montreal"
     };
 }
 

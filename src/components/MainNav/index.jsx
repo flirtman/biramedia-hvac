@@ -46,6 +46,7 @@ class MainNav extends React.Component {
                                 <NavDropdown.Item href={`${process.env.PUBLIC_URL}/service/heating`}>Heating</NavDropdown.Item>
                                 <NavDropdown.Item href={`${process.env.PUBLIC_URL}/service/air-quality`}>Air Quality</NavDropdown.Item>
                                 <NavDropdown.Item href={`${process.env.PUBLIC_URL}/service/water-heaters`}>Water Heaters</NavDropdown.Item>
+                                <NavDropdown.Item href={`${process.env.PUBLIC_URL}/service/commercial-services`}>Commercial Services</NavDropdown.Item>
                             </NavDropdown>
                             <Nav.Link href={`${process.env.PUBLIC_URL}/gallery`} className={this.checkIfActive('gallery') ? 'active' : ''}>Gallery</Nav.Link>
                             <Nav.Link href={`${process.env.PUBLIC_URL}/faq`} className={this.checkIfActive('faq') ? 'active' : ''}>FAQ</Nav.Link>

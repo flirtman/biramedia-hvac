@@ -47,6 +47,7 @@ const Footer = () => {
                                 <li><Nav.Link href={`${process.env.PUBLIC_URL}/service/heating`}>Heating</Nav.Link></li>
                                 <li><Nav.Link href={`${process.env.PUBLIC_URL}/service/air-quality`}>Air Quality</Nav.Link></li>
                                 <li><Nav.Link href={`${process.env.PUBLIC_URL}/service/water-heaters`}>Water Heaters</Nav.Link></li>
+                                <li><Nav.Link href={`${process.env.PUBLIC_URL}/service/commercial-services`}>Commercial Services</Nav.Link></li>
                             </ul>
                         </Col>
                         <Col xs={12} sm={6} md={3}>
