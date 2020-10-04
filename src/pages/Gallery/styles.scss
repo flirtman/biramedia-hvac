@@ -6,4 +6,7 @@
 .gallery-body-wrap {
   margin: 50px auto;
   min-height: 600px;
+  img {
+    /*height: auto !important;*/
+  }
 }

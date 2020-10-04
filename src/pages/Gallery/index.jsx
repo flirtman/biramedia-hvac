@@ -90,12 +90,7 @@ const IMAGES = [
 
 
 
-const Gallery = (props) => {
-    const setStyle = {
-        backgroundPosition: 'center',
-        backgroundSize: 'cover',
-        backgroundRepeat: 'no-repeat',
-    };
+const Gallery = () => {
     useEffect( () =>{
         document.title = `${configs.companyName} | HVAC professionals in ${configs.greatCity} and surrounding areas`;
     });

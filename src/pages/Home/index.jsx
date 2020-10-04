@@ -2,20 +2,15 @@ import React, {useEffect} from 'react';
 import {Fade, Slide} from 'react-reveal';
 import './styles.scss';
 import MainNav from "../../components/MainNav";
-import {Col, Row, Container} from 'react-bootstrap';
+import {Col, Row} from 'react-bootstrap';
 
 import Background from '../../assets/images/background_01.jpg';
-import ImgBox1 from '../../assets/images/inner_11.jpg';
-import ImgBox2 from '../../assets/images/inner_12.jpg';
-import ImgBox3 from '../../assets/images/inner_13.jpg';
 
 import ImgSales1 from '../../assets/images/phone-ring.png';
 import ImgSales2 from '../../assets/images/worenty.png';
 import ImgSales3 from '../../assets/images/lisence.png';
 
 import inner_blue_02 from '../../assets/images/inner_blue_02.jpg';
-
-
 
 import Brands from "../../components/Brands";
 import BlueQuoteStripe  from '../../components/BlueQuoteStripe';

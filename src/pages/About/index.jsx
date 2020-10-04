@@ -1,5 +1,5 @@
 import React, {useEffect} from 'react';
-import {Container, Row, Col, Fade} from 'react-bootstrap';
+import {Container, Row, Col} from 'react-bootstrap';
 
 import './styles.scss';
 import MainNav from "../../components/MainNav";
@@ -13,7 +13,7 @@ import configs from "../../assets/configs";
 
 import ServiceBoxes  from '../../components/ServiceBoxes';
 
-const About = (props) => {
+const About = () => {
     useEffect( () =>{
         document.title = `${configs.companyName} | HVAC professionals in ${configs.greatCity} and surrounding areas`;
     });
@@ -27,7 +27,7 @@ const About = (props) => {
                 <Row>
                     <Col md={4}>
                         <div className="image-wrap-right">
-                            <img src={Img1} style={{'width' : '100%'}}/>
+                            <img src={Img1} style={{'width' : '100%'}} alt=""/>
                         </div>
                     </Col>
                     <Col md={8}>
